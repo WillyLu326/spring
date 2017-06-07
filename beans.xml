@@ -10,4 +10,10 @@
 		<property name="taxId" value="123"></property>
 	</bean>
 
+
+	<bean id="address" class="beans.Address">
+		<constructor-arg name="street" value="Balmoral" type="String"></constructor-arg>
+		<constructor-arg name="postcode" value="91709" type="String"></constructor-arg>
+	</bean>
+	
 </beans>
