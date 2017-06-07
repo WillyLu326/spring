@@ -8,6 +8,7 @@
 		<constructor-arg name="id" value="1"></constructor-arg>
 		<constructor-arg name="name" value="Willy"></constructor-arg>
 		<property name="taxId" value="123"></property>
+		<property name="address" ref="address"></property>
 	</bean>
 
 

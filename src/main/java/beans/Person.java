@@ -8,6 +8,9 @@ public class Person {
 	
 	private int taxId;
 	
+	private Address address;
+	
+	
 	public Person() {}
 	
 	public Person(int id, String name) {
@@ -20,13 +23,21 @@ public class Person {
 		this.taxId = taxId;
 	}
 
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	
 	public void speak() {
 		System.out.println("Hi, I'm a person");
 	}
 
+	
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + "]";
+		return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + ", address=" + address + "]";
 	}
+
+	
 
 }
